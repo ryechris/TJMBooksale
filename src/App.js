@@ -30,11 +30,6 @@ class App extends Component {
   }
 
   handleChange = (book, shelf) => {
-    console.log('entering');
-    console.log('book: ', book);
-    console.log('shelf: ', shelf);
-    BooksAPI.update({ id: book }, shelf).then(() => this.getBooks());
-    console.log('exiting');
   }
 
   render() {
