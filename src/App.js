@@ -12,16 +12,12 @@ class App extends Component {
     super(props);
     this.state = {
       currentlyReading: [],
-      wantToRead: [],
-      read: []
     }
   }
 
   getBooks = () => {
     this.setState((prevState) => ({
       currentlyReading: BooksAPI.getAll(),
-      wantToRead: BooksAPI.getAll(),
-      read: BooksAPI.getAll()
     }))
   }
 

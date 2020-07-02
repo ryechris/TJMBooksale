@@ -3,7 +3,7 @@ import Book from './Book';
 const Shelf = props => {
   let bookshelftitle;
   if (props.heading === 'currentlyReading') {
-    bookshelftitle = 'CategoryA';
+    bookshelftitle = 'List of available books. Please WA 0822-4824-6153';
   } else if (props.heading === 'wantToRead') {
     bookshelftitle = 'CategoryB';
   } else {
